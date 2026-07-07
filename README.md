@@ -37,6 +37,7 @@ batch size 2).
 
 ## Notes
 
-- GB file: place your game gb file to current dir and rename it to `sml.gb`
+- GB file: place your game gb file to current dir and rename it to `sml.gb`.
+- KEYs: include your hf key and wandb key in keys.env to be exported.
 - Outputs: checkpoints → `odysseus_ckpts/`, logs → `logs/` + `slurm_logs/`,
   curves → `curves/`, W&B → `wandb/`.

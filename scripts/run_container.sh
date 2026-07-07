@@ -1,6 +1,14 @@
 #!/bin/bash
+set -euo pipefail
+
+KEY_ENV="${KEY_ENV:-key.env}"
+if [[ ! -f "$KEY_ENV" ]]; then
+    echo "ERROR: $KEY_ENV not found" >&2
+    exit 1
+fi
+
 set -a
-source key.env
+source "$KEY_ENV"
 set +a
 
 BASE_DIR=/projects/bcjw/pyao3
