@@ -1,0 +1,10 @@
+__pycache__/
+odysseus_ckpts/
+wandb/
+trl_src/
+keys.env
+*.png
+*.err
+*.out
+*.log
+*.gb
